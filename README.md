@@ -9,7 +9,7 @@
 
  The challenge was to build out this pricing component and get it looking as close to the design as possible
 ---
-## ⚙️ Funcionalidades
+## ⚙️ Tasks
 
 - [x] View the optimal layout for the component depending on their device's screen size
 - [x] Control the toggle with both their mouse/trackpad and their keyboard
