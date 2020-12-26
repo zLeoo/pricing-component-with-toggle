@@ -3,7 +3,7 @@
 </h2>
 
 <h1 align="center">
-    <img alt="" title="" src="" />
+    <img alt="" title="" src="design/desktop-design-annually.jpg" />
 </h1>
 ## 💻 About
 
