@@ -1,0 +1,239 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+body{
+    font-family: 'Montserrat', sans-serif ;
+    background-color: hsl(240, 78%, 98%);
+    
+    
+}
+
+
+.bg-bottom{
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+    
+}
+.bg-top{
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    
+}
+
+.heading{
+    display: flex;
+    
+    margin-top: 16px ;
+    align-items: center;
+    flex-direction: column;
+}
+
+.heading h1{
+    font-size: 25px;
+    color: hsl(232, 13%, 33%);
+}
+
+.toggle-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 32px ;
+    
+}
+
+.toggle-container h3{
+    color: hsl(234, 14%, 74%);
+    font-size: 13px;
+}
+
+.toggle-button{
+    width: 50px;
+    height: 20px;
+    margin: 0 16px ;
+    background-color: #6A70DD;
+    border-radius: 30px;
+    padding: 3px;
+}
+
+.toggle-button  > .inner-circle{
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 50% ;
+    transition: all 300ms ease-in-out;
+}
+
+.toggle-button.active{
+    background-color:  #9BA0ED;
+}
+
+
+.toggle-button.active > .inner-circle{
+    margin-left:  30px ;
+}
+
+/*cards*/
+
+.cards-container{
+    
+    
+    display: flex;
+    margin-top: 64px ;
+    
+    justify-content: center;
+}
+
+.basic, .professional, .master{
+    text-align: center;
+    width: 250px;
+    height: 400px;
+    background-color: white;
+    border-radius: 13px;
+    display: flex;
+    flex-direction: column ;
+    align-items: center;
+    box-shadow: 0px 0px 19px 4px rgba(0,0,0,0.1);
+}
+
+.basic, .master{
+    width: 300px;
+}
+
+
+.basic{
+    
+    margin-right:-5px ;
+}
+
+.master{
+    
+    margin-left:-5px ;
+}
+
+
+.professional{
+    z-index: 1;
+    margin-top: -25px ;
+    padding: 25px 20px;
+    color: white;
+    background: linear-gradient(hsl(236, 72%, 79%) , hsl(237, 63%, 64%));
+}
+
+.price-container{
+    display: flex;
+    align-items: center;
+}
+
+.cards-container h2{
+    margin-top: 32px ;
+    margin-bottom: 16px ;
+    font-size: 20px;
+}
+
+.cards-container h3{
+    font-size: 16px ;
+}
+
+.price-container h1{
+    font-size: 55px ;
+}
+
+.cifrao{
+    font-size: 30px;
+    margin-right: 10px ;
+}
+
+.spacer{
+    width: 200px;
+    height: 1px;
+    margin: 16px 0;
+}
+
+.basic .info .spacer, .master .info .spacer{
+    width: 200px;
+    height: 1px;
+    margin: 16px 0;
+    background-color: hsl(240, 78%, 94%)  ;
+}
+
+.professional .info .spacer{
+    width: 200px;
+    height: 1px;
+    margin: 16px 0;
+    background-color: hsl(234, 14%, 74%)  ;
+}
+
+.btn{
+    padding: 12px 64px;
+    font-family: 'Montserrat', sans-serif ;
+    margin-top: 10px ;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 2px;
+    border-radius: 5px ;
+    outline: none;
+    border: none;
+    transition: 0.3s;
+    
+}
+
+.basic .btn, .master .btn{
+    color: #ffffff;
+    background:  #6A70DD /*linear-gradient(90deg, #212CCA, #696FDD)*/;
+    
+}
+
+.professional .btn{
+    color:#6A70DD;
+    background: rgba(255, 255, 255);
+    
+}
+
+.basic .btn:hover, .master .btn:hover{
+    color:#6A70DD;
+    background: rgba(106, 112, 221,0);
+    border: 1px solid #6A70DD;
+    cursor: pointer;
+    
+}
+
+.professional .btn:hover{
+    color:#ffffff;
+    background: rgba(106, 112, 221, 0);
+    border: 1px solid #ffffff;
+    cursor: pointer;
+}
+
+
+@media only screen and (max-width: 980px){
+    .professional{
+        
+        margin-top: 0 ;
+        width: 300px;
+        padding: 0;
+        color: white;
+        background: linear-gradient(hsl(236, 72%, 79%) , hsl(237, 63%, 64%));
+    }
+    .basic, .professional, .master{
+        margin-bottom: 16px; 
+        margin: 0 0 16px 0;
+    }
+    
+    .cards-container{
+        flex-direction: column ;
+        align-items: center;
+    }
+    
+    .bg-top{
+        display: none;
+    }
+    .bg-bottom{
+        display: none;
+    }
+} 
+
