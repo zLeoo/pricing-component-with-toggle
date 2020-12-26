@@ -22,7 +22,7 @@
 
 ---
 
-## 🦸 Autor
+## 🦸 Author
 
 <a href="https://github.com/zLeoo">
  <img style="border-radius: 50%;" src="https://avatars2.githubusercontent.com/u/34231899?s=460&u=4b859dc0725f784d679e3ccde87ff90ef19be680&v=4" width="100px;" alt=""/>
